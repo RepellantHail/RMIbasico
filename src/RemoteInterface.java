@@ -1,4 +1,6 @@
-public interface RemoteInterface extends java.rmi.Remote {
-    public void printMessage() throws java.rmi.RemoteException;
-    public int getLength() throws java.rmi.RemoteException;
+import java.rmi.Remote;
+import java.rmi.RemoteException;
+public interface RemoteInterface extends Remote {
+    public void printMessage() throws RemoteException;
+    public int getLength() throws RemoteException;
 }
